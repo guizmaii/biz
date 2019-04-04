@@ -5,7 +5,7 @@ module Biz
     class Linear < SimpleDelegator
 
       def initialize(periods, shifts, selector)
-        @periods   = periods.to_enum
+        @periods   = periods
         @shifts    = shifts.to_enum
         @selector  = selector
         @sequences = [@periods, @shifts]
